@@ -28,7 +28,6 @@ The answer
 If you work out the number of possible hops for the first few steps you end up with:
 
 n | hops
---------
 1 | 1
 2 | 2
 3 | 3
@@ -36,4 +35,38 @@ n | hops
 5 | 8
 6 | 13
 
-This is the fibonacci sequence (the next number in the sequence is the sum of the two previous numbers).
+This is the fibonacci sequence (the next number in the sequence is the sum of the two previous numbers). The sequence of 
+fibonacci numbers can be expressed like this:
+
+f(n) = f(n-1) + f(n-2)
+f(1) = 1
+f(0) = 0
+
+In my opinion the most natural way to implement fibonacci is recursively, but it's also possible to implement it iteratively,
+as a generator and there's even a closed form expression. I've included the recursive, iterative and generator answers as part
+of the solution.
+
+How to ask the question
+-----------------------
+
+The important thing about this question isn't that the candidate recognizes the fact that the sequence is fibonacci, but actually
+in the follow up questions, which we will discuss later. 
+
+When I ask this question I like to work through the above example with them to make sure they understand the question and then watch 
+them work out the answer for other steps. A lot of candidates will recognize the pattern very quickly, but if they don't it's not a 
+big deal. Once they either worked out the pattern or given up give them the formula and the method signature:
+
+int fib(int n){ /* your code goes here /* }
+
+This is what you want them to implement.
+
+Regardless of whether they choose to implement the algorithm iteratively or recursively you want them to end up implementing them both.
+
+The follow up questions
+-----------------------
+
+Is the return type for the function suitable, if not what would be a good alternative?
+What happens for a large value of n?
+How many times is the fib function called for n in the recursive implementation?
+Which algorithm is better, recursive or iterative?
+How could you optimize the recursive function to make it more performant?
