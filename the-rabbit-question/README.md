@@ -65,8 +65,8 @@ Regardless of whether they choose to implement the algorithm iteratively or recu
 The follow up questions
 -----------------------
 
-Is the return type for the function suitable, if not what would be a good alternative?
-What happens for a large value of n?
-How many times is the fib function called for n in the recursive implementation?
-Which algorithm is better, recursive or iterative?
-How could you optimize the recursive function to make it more performant?
+ * Is the return type for the function suitable, if not what would be a good alternative?
+ * What happens for a large value of n?
+ * How many times is the fib function called for n in the recursive implementation?
+ * Which algorithm is better, recursive or iterative?
+ * How could you optimize the recursive function to make it more performant?
